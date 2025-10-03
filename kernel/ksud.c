@@ -64,6 +64,10 @@ bool ksu_input_hook __read_mostly = true;
 #endif
 bool ksu_execveat_hook __read_mostly = true;
 
+#ifdef CONFIG_KSU_SUSFS_SUS_SU
+bool susfs_is_sus_su_ready = false;
+#endif // #ifdef CONFIG_KSU_SUSFS_SUS_SU
+
 u32 ksu_devpts_sid;
 
 // Detect whether it is on or not
@@ -73,11 +77,11 @@ void on_post_fs_data(void)
 {
 	static bool done = false;
 	if (done) {
-		pr_info("%s already done\n", __func__);
+		pr_info("ksu_on_post_fs_data already done\n");
 		return;
 	}
 	done = true;
-	pr_info("%s!\n", __func__);
+	pr_info("ksu_on_post_fs_data!\n");
 	ksu_load_allow_list();
 	// sanity check, this may influence the performance
 	stop_input_hook();
@@ -673,6 +677,10 @@ static void stop_vfs_read_hook(void)
 #else
 	ksu_vfs_read_hook = false;
 	pr_info("stop vfs_read_hook\n");
+#endif
+#ifdef CONFIG_KSU_SUSFS_SUS_SU
+	susfs_is_sus_su_ready = true;
+	pr_info("susfs: sus_su is ready\n");
 #endif
 }
 
