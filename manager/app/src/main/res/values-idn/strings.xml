@@ -64,7 +64,6 @@
     <string name="require_kernel_version" formatted="false">Versi KernelSU saat ini %s terlalu rendah untuk menjalankan manajer dengan benar. Harap perbarui ke versi %s atau yang lebih tinggi!</string>
     <string name="settings_umount_modules_default">Lepas kait modul secara bawaan</string>
     <string name="settings_umount_modules_default_summary">Nilai bawaan global untuk \"Lepas Kait Modul\" dalam profil aplikasi. Jika diaktifkan, ini akan menghapus semua perubahan sistem yang dibuat oleh modul untuk aplikasi tanpa profil yang ditetapkan.</string>
-    <string name="settings_susfs_toggle">Nonaktifkan hook kprobe</string>
     <string name="profile_umount_modules_summary">Mengaktifkan opsi ini akan memungkinkan KernelSU untuk memulihkan file yang diubah oleh modul untuk aplikasi ini.</string>
     <string name="profile_selinux_domain">Domain</string>
     <string name="profile_selinux_rules">Aturan</string>
@@ -242,7 +241,6 @@ Tanamkan: Secara permanen memasang ke sistem</string>
     <string name="invalid_file_type">Jenis file tidak valid! Harap pilih file .kpm.</string>
     <string name="confirm_uninstall_title_with_filename">Copot Pemasangan</string>
     <string name="confirm_uninstall_content">Akan mencopot KPM berikut: %s</string>
-    <string name="settings_susfs_toggle_summary">Nonaktifkan hook kprobe yang dibuat oleh KernelSU, menggunakan inline hook sebagai gantinya, mirip dengan metode hook untuk kernel tanpa GKI.</string>
     <string name="image_editor_hint">Gunakan dua jari untuk memperbesar gambar dan satu jari untuk menyeret, untuk menyesuaikan posisi</string>
     <string name="reprovision">Provisi Ulang</string>
     <!-- Kernel Flash Progress Related -->

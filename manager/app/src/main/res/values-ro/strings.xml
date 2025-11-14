@@ -63,7 +63,6 @@
     <string name="require_kernel_version" formatted="false">The current KernelSU version %s is too low for the manager to work properly. Please upgrade to version %s or higher!</string>
     <string name="settings_umount_modules_default">U-montează modulele în mod implicit</string>
     <string name="settings_umount_modules_default_summary">Valoarea implicită globală pentru „Module u-montate” în Profilurile aplicațiilor. Dacă este activat, va elimina toate modificările modulelor aduse sistemului pentru aplicațiile care nu au un profil setat.</string>
-    <string name="settings_susfs_toggle">Disable kprobe hooks</string>
     <string name="profile_umount_modules_summary">Activarea acestei opțiuni va permite KernelSU să restaureze orice fișiere modificate de către modulele pentru această aplicație.</string>
     <string name="profile_selinux_domain">Domeniu</string>
     <string name="profile_selinux_rules">Reguli</string>
@@ -235,7 +234,6 @@
     <string name="invalid_file_type">Incorrect file type! Please select .kpm file.</string>
     <string name="confirm_uninstall_title_with_filename">Uninstall</string>
     <string name="confirm_uninstall_content">The following KPM will be uninstalled: %s</string>
-    <string name="settings_susfs_toggle_summary">Disable kprobe hooks created by KernelSU, using inline hooks instead, which is similar to non-GKI kernel hooking method.</string>
     <string name="image_editor_hint">Use two fingers to zoom the image, and one finger to drag it to adjust the position</string>
     <string name="reprovision">Reprovision</string>
     <!-- Kernel Flash Progress Related -->

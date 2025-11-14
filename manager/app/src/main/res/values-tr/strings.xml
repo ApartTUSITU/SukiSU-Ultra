@@ -63,7 +63,6 @@
     <string name="require_kernel_version" formatted="false">Mevcut KernelSU sürümü %s, yöneticinin düzgün çalışması için çok düşük. Lütfen sürüm %s veya daha yüksek bir sürüme yükseltin!</string>
     <string name="settings_umount_modules_default">Modülleri varsayılan olarak bağlamayı kaldır</string>
     <string name="settings_umount_modules_default_summary">Uygulama Profilindeki \"Modülleri bağlamayı kaldır\" için küresel varsayılan değer. Etkinleştirilirse, profil ayarlanmamış uygulamalar için sistemdeki tüm modül değişikliklerini kaldırır.</string>
-    <string name="settings_susfs_toggle">Kprobe kancalarını devre dışı bırak</string>
     <string name="profile_umount_modules_summary">Bu seçeneği etkinleştirmek, KernelSU\'nun bu uygulama için modüller tarafından değiştirilen dosyaları geri yüklemesine izin verecektir.</string>
     <string name="profile_selinux_domain">Etki alanı</string>
     <string name="profile_selinux_rules">Kurallar</string>
@@ -247,7 +246,6 @@
     <string name="invalid_file_type">Yanlış dosya türü! Lütfen .kpm dosyasını seçin.</string>
     <string name="confirm_uninstall_title_with_filename">Kaldır</string>
     <string name="confirm_uninstall_content">Aşağıdaki KPM kaldırılacak: %s</string>
-    <string name="settings_susfs_toggle_summary">KernelSU tarafından oluşturulan kprobe kancalarını devre dışı bırakın, bunun yerine inline kancalar kullanın, bu da Non-GKI çekirdek kanca yöntemine benzer.</string>
     <string name="image_editor_hint">Görüntüyü yaklaştırmak için iki parmağınızı kullanın ve bir parmağınızla sürükleyerek konumu ayarlayın</string>
     <string name="reprovision">Yeniden sağla</string>
     <!-- Kernel Flash Progress Related -->

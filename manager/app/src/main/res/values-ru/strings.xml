@@ -63,7 +63,6 @@
     <string name="require_kernel_version" formatted="false">Текущая версия KernelSU %s слишком низкая для правильной работы менеджера. Пожалуйста, обновите до версии %s или выше!</string>
     <string name="settings_umount_modules_default">Размонтировать модули по умолчанию</string>
     <string name="settings_umount_modules_default_summary">Глобальное значение по умолчанию для \"Размонтировать модули\" в профиле приложения. При включении будут удалены все модификации модулей в системе для приложений, у которых не задан профиль</string>
-    <string name="settings_susfs_toggle">Отключить kprobe хуки</string>
     <string name="profile_umount_modules_summary">Включение этой опции позволит KernelSU восстанавливать любые измененные модулями файлы для данного приложения.</string>
     <string name="profile_selinux_domain">Домен</string>
     <string name="profile_selinux_rules">Правила</string>
@@ -250,7 +249,6 @@
     <string name="invalid_file_type">Неверный тип файла! Пожалуйста, выберите .kpm файл.</string>
     <string name="confirm_uninstall_title_with_filename">Удалить</string>
     <string name="confirm_uninstall_content">Следующие KPM будут удалены: %s</string>
-    <string name="settings_susfs_toggle_summary">Отключите хуки kprobe, созданные KernelSU, используя встроенные хуки, которые похожи на метод расширения ядра вне GKI.</string>
     <string name="image_editor_hint">Используйте два пальца для увеличения изображения, и один палец для изменения положения</string>
     <string name="reprovision">Реализация</string>
     <!-- Kernel Flash Progress Related -->

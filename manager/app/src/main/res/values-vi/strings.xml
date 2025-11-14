@@ -63,7 +63,6 @@
     <string name="require_kernel_version" formatted="false">Phiên bản SukiSU Ultra hiện tại %s quá thấp để Trình quản lý hoạt động bình thường. Vui lòng cập nhật lên phiên bản %s hoặc cao hơn!</string>
     <string name="settings_umount_modules_default">Umount modules</string>
     <string name="settings_umount_modules_default_summary">Giá trị mặc định chung cho \"Umount modules\" trong Hồ sơ ứng dụng. Nếu được bật, mọi thay đổi hệ thống do các module gây ra sẽ bị gỡ bỏ khỏi hệ thống và các ứng dụng chưa thiết lập hồ sơ</string>
-    <string name="settings_susfs_toggle">Vô hiệu hoá kprobes hook</string>
     <string name="profile_umount_modules_summary">Bật tùy chọn này sẽ cho phép SukiSU Ultra khôi phục mọi file đã được các module sửa đổi trong ứng dụng này</string>
     <string name="profile_selinux_domain">Tên miền</string>
     <string name="profile_selinux_rules">Quy tắc</string>
@@ -238,7 +237,6 @@
     <string name="invalid_file_type">Loại file không đúng! Vui lòng chọn file .kpm</string>
     <string name="confirm_uninstall_title_with_filename">Gỡ cài đặt</string>
     <string name="confirm_uninstall_content">KPM sau đây sẽ được gỡ cài đặt: %s</string>
-    <string name="settings_susfs_toggle_summary">Vô hiệu hoá kprobes hook được tạo bởi SukiSU Ultra, thay vào đó sử dụng inlines hook, tương tự như phương pháp hook của Kernel non-GKI</string>
     <string name="image_editor_hint">Sử dụng hai ngón tay để phóng to hình ảnh và một ngón tay kéo thả để điều chỉnh vị trí</string>
     <string name="reprovision">Chọn lại</string>
     <!-- Kernel Flash Progress Related -->

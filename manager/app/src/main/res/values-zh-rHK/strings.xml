@@ -63,7 +63,6 @@
     <string name="require_kernel_version" formatted="false">當前 KernelSU 版本 %s 過低，管理器無法正常工作，請將核心 KernelSU 版本升級至 %s 或以上！</string>
     <string name="settings_umount_modules_default">默認卸載模組</string>
     <string name="settings_umount_modules_default_summary">App Profile 中\"卸載模組\"嘅全局默認值，如果啟用，將會為冇設定 Profile 嘅應用移除所有模組針對系統嘅修改。</string>
-    <string name="settings_susfs_toggle">禁用 Kprobe Hook</string>
     <string name="profile_umount_modules_summary">啟用該選項後將允許 KernelSU 為本應用還原被模組修改過嘅文件。</string>
     <string name="profile_selinux_domain">域</string>
     <string name="profile_selinux_rules">規則</string>
@@ -235,7 +234,6 @@
     <string name="invalid_file_type">文件類型唔正確，請選擇 .kpm 文件</string>
     <string name="confirm_uninstall_title_with_filename">卸載</string>
     <string name="confirm_uninstall_content">將卸載以下 KPM 模組：\n%s</string>
-    <string name="settings_susfs_toggle_summary">禁用由 KernelSU 創建嘅 Kprobe Hook，並使用非 Kprobe 內嘅聯鈎子代替，實現方式類似於唔支援 Kprobe 嘅非 GKI 核心。</string>
     <string name="image_editor_hint">使用雙指縮放圖片，單指拖動調整位置</string>
     <string name="reprovision">重置</string>
     <!-- Kernel Flash Progress Related -->

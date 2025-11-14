@@ -63,7 +63,6 @@
     <string name="require_kernel_version" formatted="false">La versión %s actual de KernelSU es demasiado baja para que el gestor funcione correctamente. Por favor, ¡actualice a la versión %s o superior!</string>
     <string name="settings_umount_modules_default">Desmontar módulos por defecto</string>
     <string name="settings_umount_modules_default_summary">El valor global predeterminado para \"Umount modules\" en App Profile. Si está activado, eliminará todas las modificaciones de módulos del sistema para las apps que no tengan un perfil establecido.</string>
-    <string name="settings_susfs_toggle">Desactivar kprobe hooks</string>
     <string name="profile_umount_modules_summary">Activar esta opción permitirá a KernelSU restaurar cualquier archivo modificado por los módulos para esta aplicación.</string>
     <string name="profile_selinux_domain">Dominio</string>
     <string name="profile_selinux_rules">Reglas</string>
@@ -233,7 +232,6 @@
     <string name="invalid_file_type">¡Tipo de archivo incorrecto! Por favor seleccione el archivo .kpm.</string>
     <string name="confirm_uninstall_title_with_filename">Desinstalar</string>
     <string name="confirm_uninstall_content">El siguiente KPM será desinstalado: %s</string>
-    <string name="settings_susfs_toggle_summary">Deshabilita los ganchos kprobe creados por KernelSU, usando ganchos en línea en su lugar, que es similar al método de enganche del núcleo no GKI.</string>
     <string name="image_editor_hint">Usa dos dedos para acercar la imagen, y un dedo para arrastrarla para ajustar la posición</string>
     <string name="reprovision">Reaprovisionamiento</string>
     <!-- Kernel Flash Progress Related -->

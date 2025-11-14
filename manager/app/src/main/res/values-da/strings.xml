@@ -63,7 +63,6 @@
     <string name="require_kernel_version" formatted="false">The current KernelSU version %s is too low for the manager to work properly. Please upgrade to version %s or higher!</string>
     <string name="settings_umount_modules_default">Afmontere moduler som standard</string>
     <string name="settings_umount_modules_default_summary">Den globale standard værdi for \"Afmonter moduler\" i App Profiler. Hvis aktiveret vil den fjerne alle modulers modifikationer til system applikationerne der ikke har en sat Profil.</string>
-    <string name="settings_susfs_toggle">Disable kprobe hooks</string>
     <string name="profile_umount_modules_summary">Aktivering af denne indstilling vil tillade KernelSU at gendanne hvilken som helst modificeret filer af modulet for denne applikation.</string>
     <string name="profile_selinux_domain">Domæne</string>
     <string name="profile_selinux_rules">Regler</string>
@@ -233,7 +232,6 @@
     <string name="invalid_file_type">Incorrect file type! Please select .kpm file.</string>
     <string name="confirm_uninstall_title_with_filename">Uninstall</string>
     <string name="confirm_uninstall_content">The following KPM will be uninstalled: %s</string>
-    <string name="settings_susfs_toggle_summary">Disable kprobe hooks created by KernelSU, using inline hooks instead, which is similar to non-GKI kernel hooking method.</string>
     <string name="image_editor_hint">Use two fingers to zoom the image, and one finger to drag it to adjust the position</string>
     <string name="reprovision">Reprovision</string>
     <!-- Kernel Flash Progress Related -->

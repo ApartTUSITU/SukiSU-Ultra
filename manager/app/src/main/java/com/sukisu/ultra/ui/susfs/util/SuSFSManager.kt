@@ -68,7 +68,7 @@ object SuSFSManager {
     private const val MIN_VERSION_FOR_HIDE_MOUNT = "1.5.8"
     private const val MIN_VERSION_FOR_LOOP_PATH = "1.5.9"
     private const val MIN_VERSION_SUS_MAPS = "1.5.12"
-    const val MAX_SUSFS_VERSION = "1.5.12"
+    const val MAX_SUSFS_VERSION = "2.0.0"
     private const val BACKUP_FILE_EXTENSION = ".susfs_backup"
     private const val MEDIA_DATA_PATH = "/data/media/0/Android/data"
     private const val CGROUP_UID_PATH_PREFIX = "/sys/fs/cgroup/uid_"

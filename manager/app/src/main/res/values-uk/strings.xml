@@ -64,7 +64,6 @@
     <string name="require_kernel_version" formatted="false">Поточна версія KernelSU %s занадто низька для коректної роботи менеджера. Будь ласка, оновіться до версії %s або вище!</string>
     <string name="settings_umount_modules_default">Відмонтовувати модулі за замовчуванням</string>
     <string name="settings_umount_modules_default_summary">Глобальне значення за замовчуванням для "Відмонтувати модулі" у профілі додатку. Якщо ввімкнено, це видалить усі зміни системи, зроблені модулями, для додатків без встановленого профілю.</string>
-    <string name="settings_susfs_toggle">Вимкнути хуки kprobe</string>
     <string name="profile_umount_modules_summary">Увімкнення цієї опції дозволить KernelSU відновити будь-які змінені модулями файли для цього додатку.</string>
     <string name="profile_selinux_domain">Домен</string>
     <string name="profile_selinux_rules">Правила</string>
@@ -237,7 +236,6 @@
     <string name="invalid_file_type">Неправильний тип файлу! Будь ласка, виберіть файл .kpm.</string>
     <string name="confirm_uninstall_title_with_filename">Видалити</string>
     <string name="confirm_uninstall_content">Буде видалено наступний KPM: %s</string>
-    <string name="settings_susfs_toggle_summary">Вимкнути хуки kprobe, створені KernelSU, використовуючи натомість інлайн-хуки, що схоже на метод хуків для ядер без GKI.</string>
     <string name="image_editor_hint">Використовуйте два пальці для масштабування зображення та один палець для перетягування, щоб налаштувати положення</string>
     <string name="reprovision">Переналаштувати</string>
     <!-- Kernel Flash Progress Related -->

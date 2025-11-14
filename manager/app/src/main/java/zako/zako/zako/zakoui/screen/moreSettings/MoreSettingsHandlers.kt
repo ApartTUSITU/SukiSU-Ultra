@@ -82,15 +82,6 @@ class MoreSettingsHandlers(
                 state.dynamicSignHash = config.hash
             }
         }
-
-        // 初始化 SuSFS 状态
-        val currentMode = susfsSUS_SU_Mode()
-        val wasManuallyDisabled = prefs.getBoolean("enable_sus_su", true)
-        if (currentMode != "2" && wasManuallyDisabled) {
-            susfsSUS_SU_2()
-            prefs.edit { putBoolean("enable_sus_su", true) }
-        }
-        state.isSusFSEnabled = currentMode == "2"
     }
 
     /**
@@ -373,30 +364,6 @@ class MoreSettingsHandlers(
                 ).show()
             }
         }
-    }
-
-    /**
-     * 处理SuSFS变更
-     */
-    fun handleSusFSChange(enabled: Boolean) {
-        if (enabled) {
-            susfsSUS_SU_2()
-            prefs.edit { putBoolean("enable_sus_su", true) }
-            Toast.makeText(
-                context,
-                context.getString(R.string.susfs_enabled),
-                Toast.LENGTH_SHORT
-            ).show()
-        } else {
-            susfsSUS_SU_0()
-            prefs.edit { putBoolean("enable_sus_su", false) }
-            Toast.makeText(
-                context,
-                context.getString(R.string.susfs_disabled),
-                Toast.LENGTH_SHORT
-            ).show()
-        }
-        state.isSusFSEnabled = enabled
     }
 
     /**

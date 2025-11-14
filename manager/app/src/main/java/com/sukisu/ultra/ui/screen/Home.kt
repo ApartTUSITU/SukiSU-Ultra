@@ -52,7 +52,7 @@ import com.sukisu.ultra.ui.theme.getCardColors
 import com.sukisu.ultra.ui.theme.getCardElevation
 import com.sukisu.ultra.ui.susfs.util.SuSFSManager
 import com.sukisu.ultra.ui.util.checkNewVersion
-import com.sukisu.ultra.ui.util.getSuSFS
+import com.sukisu.ultra.ui.util.getSuSFSVersion
 import com.sukisu.ultra.ui.util.module.LatestVersionInfo
 import com.sukisu.ultra.ui.util.reboot
 import com.sukisu.ultra.ui.viewmodel.HomeViewModel
@@ -296,7 +296,7 @@ private fun TopBar(
         actions = {
             if (isDataLoaded) {
                 // SuSFS 配置按钮
-                if (getSuSFS() == "Supported" && SuSFSManager.isBinaryAvailable(context)) {
+                if (getSuSFSVersion().isNotEmpty() && SuSFSManager.isBinaryAvailable(context)) {
                     IconButton(onClick = {
                         navigator.navigate(SuSFSConfigScreenDestination)
                     }) {
@@ -827,17 +827,7 @@ private fun InfoCard(
 private fun SuSFSInfoText(systemInfo: HomeViewModel.SystemInfo): String = buildString {
     append(systemInfo.suSFSVersion)
 
-    val isSUS_SU = systemInfo.suSFSFeatures == "CONFIG_KSU_SUSFS_SUS_SU"
-    val isKprobesHook = Natives.getHookType() == "Kprobes"
-
     when {
-        isSUS_SU && isKprobesHook -> {
-            append(" (${systemInfo.suSFSVariant})")
-            if (systemInfo.susSUMode.isNotEmpty()) {
-                append(" ${stringResource(R.string.sus_su_mode)} ${systemInfo.susSUMode}")
-            }
-        }
-
         Natives.getHookType() == "Manual" -> {
             append(" (${stringResource(R.string.manual_hook)})")
         }

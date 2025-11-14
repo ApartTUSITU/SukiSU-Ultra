@@ -63,7 +63,6 @@
     <string name="require_kernel_version" formatted="false">إصدار KernelSU الحالي %s منخفض جدًا بحيث لا يعمل المدير بشكل صحيح. الرجاء الترقية إلى الإصدار %s أو أعلى!</string>
     <string name="settings_umount_modules_default">الغاء تحميل الإضافات بشكل افتراضي</string>
     <string name="settings_umount_modules_default_summary">القيمة الافتراضية العامة لـ\"إلغاء تحميل الإضافات\" في ملفات تعريف التطبيقات. إذا تم تمكينه، إزالة جميع تعديلات الإضافات على النظام للتطبيقات التي لا تحتوي على مجموعة ملف تعريف.</string>
-    <string name="settings_susfs_toggle">تعطيل روابط kprobe</string>
     <string name="profile_umount_modules_summary">سيسمح تمكين هذا الخيار لـKernelSU باستعادة أي ملفات معدلة بواسطة الإضافات لهذا التطبيق.</string>
     <string name="profile_selinux_domain">المجال</string>
     <string name="profile_selinux_rules">القواعد</string>
@@ -235,7 +234,6 @@
     <string name="invalid_file_type">نوع الملف غير صحيح! الرجاء تحديد ملف .kpm.</string>
     <string name="confirm_uninstall_title_with_filename">إلغاء التثبيت</string>
     <string name="confirm_uninstall_content">سيتم إلغاء تثبيت KPM التالية: %s</string>
-    <string name="settings_susfs_toggle_summary">تعطيل روابط kprobe التي أنشأتها KernelSU، باستخدام الروابط الواردة بدلاً من ذلك، والتي تشبه طريقة الربط غير GKI غير GKI.</string>
     <string name="image_editor_hint">استخدم إصبعين لتكبير الصورة، وأصبع واحد لسحبها لضبط الموضع</string>
     <string name="reprovision">إعادة</string>
     <!-- Kernel Flash Progress Related -->

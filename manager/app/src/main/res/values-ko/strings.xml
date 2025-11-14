@@ -63,7 +63,6 @@
     <string name="require_kernel_version" formatted="false">The current KernelSU version %s is too low for the manager to work properly. Please upgrade to version %s or higher!</string>
     <string name="settings_umount_modules_default">기본값으로 모듈 사용 해제</string>
     <string name="settings_umount_modules_default_summary">앱 프로필 메뉴의 \"모듈 마운트 해제\" 설정에 대한 전역 기본값을 설정합니다. 활성화 시, 개별 프로필이 설정되지 않은 앱은 시스템에 대한 모듈의 모든 수정사항이 적용되지 않습니다.</string>
-    <string name="settings_susfs_toggle">Disable kprobe hooks</string>
     <string name="profile_umount_modules_summary">이 옵션이 활성화되면, KernelSU는 이 앱에 대한 모듈의 모든 수정사항을 복구합니다.</string>
     <string name="profile_selinux_domain">도메인</string>
     <string name="profile_selinux_rules">규칙</string>
@@ -233,7 +232,6 @@
     <string name="invalid_file_type">Incorrect file type! Please select .kpm file.</string>
     <string name="confirm_uninstall_title_with_filename">Uninstall</string>
     <string name="confirm_uninstall_content">The following KPM will be uninstalled: %s</string>
-    <string name="settings_susfs_toggle_summary">Disable kprobe hooks created by KernelSU, using inline hooks instead, which is similar to non-GKI kernel hooking method.</string>
     <string name="image_editor_hint">Use two fingers to zoom the image, and one finger to drag it to adjust the position</string>
     <string name="reprovision">Reprovision</string>
     <!-- Kernel Flash Progress Related -->

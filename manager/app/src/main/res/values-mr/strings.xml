@@ -63,7 +63,6 @@
     <string name="require_kernel_version" formatted="false">The current KernelSU version %s is too low for the manager to work properly. Please upgrade to version %s or higher!</string>
     <string name="settings_umount_modules_default">डीफॉल्टनुसार मॉड्यूल्स उमाउंट करा</string>
     <string name="settings_umount_modules_default_summary">अॅप प्रोफाइलमधील \"उमाउंट मॉड्यूल्स\" साठी जागतिक डीफॉल्ट मूल्य. सक्षम असल्यास, ते प्रोफाइल सेट नसलेल्या ॲप्लिकेशनचे सिस्टममधील सर्व मॉड्यूल बदल काढून टाकेल.</string>
-    <string name="settings_susfs_toggle">Disable kprobe hooks</string>
     <string name="profile_umount_modules_summary">हा पर्याय सक्षम केल्याने KernelSU ला या ऍप्लिकेशनसाठी मॉड्यूल्सद्वारे कोणत्याही सुधारित फाइल्स पुनर्संचयित करण्यास अनुमती मिळेल.</string>
     <string name="profile_selinux_domain">डोमेन</string>
     <string name="profile_selinux_rules">नियम</string>
@@ -233,7 +232,6 @@
     <string name="invalid_file_type">Incorrect file type! Please select .kpm file.</string>
     <string name="confirm_uninstall_title_with_filename">Uninstall</string>
     <string name="confirm_uninstall_content">The following KPM will be uninstalled: %s</string>
-    <string name="settings_susfs_toggle_summary">Disable kprobe hooks created by KernelSU, using inline hooks instead, which is similar to non-GKI kernel hooking method.</string>
     <string name="image_editor_hint">Use two fingers to zoom the image, and one finger to drag it to adjust the position</string>
     <string name="reprovision">Reprovision</string>
     <!-- Kernel Flash Progress Related -->

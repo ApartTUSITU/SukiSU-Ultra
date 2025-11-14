@@ -63,7 +63,6 @@
     <string name="require_kernel_version" formatted="false">Versi KernelSU saat ini %s terlalu rendah untuk menjalankan manager dengan baik. Harap tingkatkan ke versi %s atau yang lebih tinggi!</string>
     <string name="settings_umount_modules_default">Melepas Modul secara bawaan</string>
     <string name="settings_umount_modules_default_summary">Menggunakan \"Umount Modul\" secara universal pada Profil Aplikasi. Jika diaktifkan, akan menghapus semua modifikasi sistem untuk aplikasi yang tidak memiliki set profil.</string>
-    <string name="settings_susfs_toggle">Nonaktifkan kprobe hooks</string>
     <string name="profile_umount_modules_summary">Aktifkan opsi ini agar KernelSU dapat memulihkan kembali berkas termodifikasi oleh modul pada aplikasi ini.</string>
     <string name="profile_selinux_domain">Domain</string>
     <string name="profile_selinux_rules">Aturan</string>
@@ -249,7 +248,6 @@
     <string name="invalid_file_type">Format file tidak sesuai. Silakan pilih file dengan format .kpm.</string>
     <string name="confirm_uninstall_title_with_filename">Menghapus instalan</string>
     <string name="confirm_uninstall_content">KPM berikut akan diuninstall: %s</string>
-    <string name="settings_susfs_toggle_summary">Nonaktifkan kprobe hooks yang dibuat oleh KernelSU, gunakan inline hooks sebagai gantinya (metode ini mirip dengan hooking kernel non-GKI).</string>
     <string name="image_editor_hint">Gunakan dua jari untuk memperbesar gambar, dan satu jari untuk menggeser mengatur posisi</string>
     <string name="reprovision">Reprovisi</string>
     <!-- Kernel Flash Progress Related -->

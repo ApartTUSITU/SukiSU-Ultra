@@ -63,7 +63,6 @@
     <string name="require_kernel_version" formatted="false">現在の KernelSU のバージョン「%s」は低すぎるため、マネージャーは正常に動作しません。バージョン「%s」以上に更新してください！</string>
     <string name="settings_umount_modules_default">デフォルトでモジュールのマウントを解除する</string>
     <string name="settings_umount_modules_default_summary">アプリプロファイルの「モジュールのアンマウント」の共通となるデフォルト値です。 有効にすると、プロファイルセットを持たないアプリのシステムに対するすべてのモジュールの変更が削除されます。</string>
-    <string name="settings_susfs_toggle">kprobe フックを無効化</string>
     <string name="profile_umount_modules_summary">このオプションを有効にすると、KernelSU はこのアプリのモジュールによって変更されたファイルを復元できるようになります。</string>
     <string name="profile_selinux_domain">ドメイン</string>
     <string name="profile_selinux_rules">ルール</string>
@@ -240,7 +239,6 @@
     <string name="invalid_file_type">ファイルの種類が間違っています！.kpm ファイルを選択してください。</string>
     <string name="confirm_uninstall_title_with_filename">アンインストール</string>
     <string name="confirm_uninstall_content">次の KPM がアンインストールされます: %s</string>
-    <string name="settings_susfs_toggle_summary">KernelSU によって作成された kprobe フックを無効化して、代替となるインラインフックを使用します。これは、非 GKI カーネルのフック方式に似た物になります。</string>
     <string name="image_editor_hint">2 本の指で画像を拡大、1 本の指でドラッグで位置を調整します。</string>
     <string name="reprovision">再プロビジョニング</string>
     <!-- Kernel Flash Progress Related -->

@@ -49,7 +49,6 @@ class HomeViewModel : ViewModel() {
         val suSFSVersion: String = "",
         val suSFSVariant: String = "",
         val suSFSFeatures: String = "",
-        val susSUMode: String = "",
         val superuserCount: Int = 0,
         val moduleCount: Int = 0,
         val kpmModuleCount: Int = 0,
@@ -237,7 +236,6 @@ class HomeViewModel : ViewModel() {
                         suSFSVersion = suSFSInfo.second,
                         suSFSVariant = suSFSInfo.third,
                         suSFSFeatures = suSFSInfo.fourth,
-                        susSUMode = suSFSInfo.fifth
                     )
                 }
 
@@ -436,16 +434,21 @@ class HomeViewModel : ViewModel() {
         }
     }
 
-    private suspend fun loadSuSFSInfo(): Tuple5<String, String, String, String, String> {
+    private suspend fun loadSuSFSInfo(): Tuple4<String, String, String, String> {
         return withContext(Dispatchers.IO) {
             val suSFS = try {
-                getSuSFS()
+                val rawFeature = getSuSFSFeatures()
+                if (rawFeature.isNotEmpty()) {
+                    "Supported"
+                } else {
+                    rawFeature
+                }
             } catch (_: Exception) {
                 "Unknown"
             }
 
             if (suSFS != "Supported") {
-                return@withContext Tuple5(suSFS, "", "", "", "")
+                return@withContext Tuple4(suSFS, "", "", "")
             }
 
             val suSFSVersion = try {
@@ -455,7 +458,7 @@ class HomeViewModel : ViewModel() {
             }
 
             if (suSFSVersion.isEmpty()) {
-                return@withContext Tuple5(suSFS, "", "", "", "")
+                return@withContext Tuple4(suSFS, "", "", "")
             }
 
             val suSFSVariant = try {
@@ -470,17 +473,7 @@ class HomeViewModel : ViewModel() {
                 ""
             }
 
-            val susSUMode = if (suSFSFeatures == "CONFIG_KSU_SUSFS_SUS_SU") {
-                try {
-                    susfsSUS_SU_Mode()
-                } catch (_: Exception) {
-                    ""
-                }
-            } else {
-                ""
-            }
-
-            Tuple5(suSFS, suSFSVersion, suSFSVariant, suSFSFeatures, susSUMode)
+            Tuple4(suSFS, suSFSVersion, suSFSVariant, suSFSFeatures)
         }
     }
 
@@ -580,6 +573,13 @@ class HomeViewModel : ViewModel() {
         val third: T3,
         val fourth: T4,
         val fifth: T5
+    )
+
+    data class Tuple4<T1, T2, T3, T4>(
+        val first: T1,
+        val second: T2,
+        val third: T3,
+        val fourth: T4
     )
 
     override fun onCleared() {

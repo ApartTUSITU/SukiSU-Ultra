@@ -63,7 +63,6 @@
     <string name="require_kernel_version" formatted="false">Die aktuelle KernelSU-Version %s ist zu alt für diese Manager-Version. Bitte auf Version %s oder höher aktualisieren!</string>
     <string name="settings_umount_modules_default">Module standardmäßig aushängen</string>
     <string name="settings_umount_modules_default_summary">Globaler Standardwert für \"Module aushängen\" im App-Profil. Falls er aktiviert ist, werden alle Moduländerungen im System für alle Apps entfernt, für die kein Profil festgelegt ist.</string>
-    <string name="settings_susfs_toggle">Kprobe-Hooks deaktivieren</string>
     <string name="profile_umount_modules_summary">Wenn du diese Option aktivierst, kann KernelSU alle von den Modulen für diese App geänderten Dateien wiederherstellen.</string>
     <string name="profile_selinux_domain">Domäne</string>
     <string name="profile_selinux_rules">Regeln</string>
@@ -235,7 +234,6 @@
     <string name="invalid_file_type">Falscher Dateityp! Bitte wählen Sie eine .kpm Datei.</string>
     <string name="confirm_uninstall_title_with_filename">Deinstallieren</string>
     <string name="confirm_uninstall_content">Folgende KPM wird deinstalliert: %s</string>
-    <string name="settings_susfs_toggle_summary">Deaktiviere kprobe Hooks die von KernelSU erstellt wurden und stattdessen inline Hooks verwenden, was der Nicht-GKI-Kernel-Hooking Methode ähnlich ist.</string>
     <string name="image_editor_hint">Verwende zwei Finger um das Bild zu vergrößern und einen Finger um die Position anzupassen</string>
     <string name="reprovision">Rückzahlung</string>
     <!-- Kernel Flash Progress Related -->

@@ -63,7 +63,6 @@
     <string name="require_kernel_version" formatted="false">The current KernelSU version %s is too low for the manager to work properly. Please upgrade to version %s or higher!</string>
     <string name="settings_umount_modules_default">ಡೀಫಾಲ್ಟ್ ಆಗಿ Umount ಮಾಡ್ಯೂಲ್</string>
     <string name="settings_umount_modules_default_summary">ಅಪ್ಲಿಕೇಶನ್ ಪ್ರೊಫೈಲ್‌ಗಳಲ್ಲಿ \"Umount ಮಾಡ್ಯೂಲ್\" ಗಾಗಿ ಜಾಗತಿಕ ಡೀಫಾಲ್ಟ್ ಮೌಲ್ಯ. ಸಕ್ರಿಯಗೊಳಿಸಿದರೆ, ಪ್ರೊಫೈಲ್ ಸೆಟ್ ಅನ್ನು ಹೊಂದಿರದ ಅಪ್ಲಿಕೇಶನ್‌ಗಳಿಗಾಗಿ ಸಿಸ್ಟಮ್‌ಗೆ ಎಲ್ಲಾ ಮಾಡ್ಯೂಲ್ ಮಾರ್ಪಾಡುಗಳನ್ನು ಇದು ತೆಗೆದುಹಾಕುತ್ತದೆ.</string>
-    <string name="settings_susfs_toggle">Disable kprobe hooks</string>
     <string name="profile_umount_modules_summary">ಈ ಆಯ್ಕೆಯನ್ನು ಸಕ್ರಿಯಗೊಳಿಸುವುದರಿಂದ ಈ ಅಪ್ಲಿಕೇಶನ್‌ಗಾಗಿ ಮಾಡ್ಯೂಲ್‌ಗಳ ಮೂಲಕ ಯಾವುದೇ ಮಾರ್ಪಡಿಸಿದ ಫೈಲ್‌ಗಳನ್ನು ಮರುಸ್ಥಾಪಿಸಲು KernelSU ಗೆ ಅನುಮತಿಸುತ್ತದೆ.</string>
     <string name="profile_selinux_domain">ಡೊಮೇನ್</string>
     <string name="profile_selinux_rules">ನಿಯಮಗಳು</string>
@@ -233,7 +232,6 @@
     <string name="invalid_file_type">Incorrect file type! Please select .kpm file.</string>
     <string name="confirm_uninstall_title_with_filename">Uninstall</string>
     <string name="confirm_uninstall_content">The following KPM will be uninstalled: %s</string>
-    <string name="settings_susfs_toggle_summary">Disable kprobe hooks created by KernelSU, using inline hooks instead, which is similar to non-GKI kernel hooking method.</string>
     <string name="image_editor_hint">Use two fingers to zoom the image, and one finger to drag it to adjust the position</string>
     <string name="reprovision">Reprovision</string>
     <!-- Kernel Flash Progress Related -->

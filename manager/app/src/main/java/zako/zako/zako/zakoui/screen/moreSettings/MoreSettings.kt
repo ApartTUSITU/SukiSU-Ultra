@@ -353,9 +353,6 @@ private fun AdvancedSettings(
             onChange = handlers::handleSelinuxChange
         )
 
-        // SuSFS 开关（仅在支持时显示）
-        SusFSSettings(state = state, handlers = handlers)
-
         // 动态管理器设置
         if (Natives.version >= Natives.MINIMAL_SUPPORTED_DYNAMIC_MANAGER && Natives.version >= Natives.MINIMAL_NEW_IOCTL_KERNEL) {
             SettingItem(
@@ -369,25 +366,6 @@ private fun AdvancedSettings(
                 onClick = { state.showDynamicSignDialog = true }
             )
         }
-    }
-}
-
-@Composable
-private fun SusFSSettings(
-    state: MoreSettingsState,
-    handlers: MoreSettingsHandlers
-) {
-    val suSFS = getSuSFS()
-    val isSUS_SU = getSuSFSFeatures()
-
-    if (suSFS == "Supported" && isSUS_SU == "CONFIG_KSU_SUSFS_SUS_SU") {
-        SwitchSettingItem(
-            icon = Icons.Filled.Security,
-            title = stringResource(id = R.string.settings_susfs_toggle),
-            summary = stringResource(id = R.string.settings_susfs_toggle_summary),
-            checked = state.isSusFSEnabled,
-            onChange = handlers::handleSusFSChange
-        )
     }
 }
 
